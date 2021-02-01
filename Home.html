@@ -7,11 +7,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="styles.css">
-<body class="w3-light-grey w3-content" style="max-width:1600px" >
+<body class="w3-light-grey w3-content" style="max-width:1600px;background-color: cyan;" >
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container">
+  <div class="w3-container ">
     <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
       <i class="fa fa-remove"></i>
     </a>
@@ -21,7 +21,7 @@
   </div>
   <div class="w3-bar-block">
     <a href="#top-stories" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>Politics</a> 
-    <a href="#Entertainment" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Entertainment</a> 
+    <a href="#entertainment" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Entertainment</a> 
     <a href="#sports" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>Sports</a>
   </div>
   <div class="w3-panel w3-large">
@@ -44,22 +44,21 @@
   <header id="top-stories">
     <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
     <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <div class="w3-container">
+    <div class="w3-container" style="background-color: #990000;">
     <h1><b>THE TIME READERS</b></h1>
     <div class="w3-section w3-bottombar w3-padding-16">
       <button class="w3-button w3-black">Home</button> 
       <button class="w3-button w3-black">Trending</button>
       <input type="text" placeholder="Search">
-        <a href="login.html"><button class="log1">Login</button></a>
-        <a href="signup.html"><button class="log">Register</button></a>
+        <a href="login-signup.html"><button class="log">Register/Login</button></a>
     </div>
     </div>
   </header>
   
   <!-- First Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-card-4">
-      <h4>TOP Stories</h4>
+  <div class="w3-container w3-padding-large w3-cyan">
+    <div class="w3-container" style="background-color:whitesmoke">
+      <h4 id="top-stories"style="background-color:white; color: black;font-size:300%;text-decoration: underline;">Top Stories</h4>
       
       <div id="myTabContent" class="tab-content">
       
@@ -68,230 +67,234 @@
       <div class="column">
         <div class="card">
           <a class=" col-sm-12 noPadding" href="/nation/politics/210121/kcr-okays-10-ews-quota-in-telangana.html">
-            <div class="col-sm-12 " style="padding:0;">
-              <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0hehs59te2sgl4m2p31ahko2e0-20200718140746.jpeg" alt="1">
+            <div class="card-img" style="background-image:url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0hehs59te2sgl4m2p31ahko2e0-20200718140746.jpeg')">
+              <!-- <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0hehs59te2sgl4m2p31ahko2e0-20200718140746.jpeg" alt="1"> -->
               <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
             </div>
-            <h3 class="sectionH3">KCR okays 10% EWS quota in Telangana </h3>	
+            <div>
+              <h3 class="sectionH3">KCR okays 10% EWS quota in Telangana </h3>
+            </div>	
           </a>					
         </div>
       </div>
       <div class="column">
         <div class="card">
           <a class=" col-sm-12 noPadding" href="/business/companies/210121/telangana-retains-its-top-4-slot-for-innovation.html">
-            <div class="col-sm-12 " style="padding:0;">
-              <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-b5qub37r8u1o95e4vgkcsbdq24-20201216235927.jpeg" alt="2">
-              <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
+            <div class="card-img" style="background-image:url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-b5qub37r8u1o95e4vgkcsbdq24-20201216235927.jpeg')">
             </div>
-            <h3 class="sectionH3">Karnataka tops in Niti Aayog's second Innovation Index again </h3>	
+            <div>
+              <h3 class="sectionH3">Karnataka tops N-A's 2nd Innovation Index </h3>	
+            </div>
           </a>					
         </div>
       </div>
       <div class="column">
         <div class="card">
           <a class=" col-sm-12 noPadding" href="/nation/politics/190121/mend-your-ways-trs-leaders-warn-bjp.html">
-            <div class="card-img-top">
-              <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-2rfkrflurqam96oshffel1o0e4-20201110225303.jpeg" alt="3">
+            <div class="card-img" style="background-image:url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-2rfkrflurqam96oshffel1o0e4-20201110225303.jpeg')">
+              <!-- <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-2rfkrflurqam96oshffel1o0e4-20201110225303.jpeg" alt="3"> -->
               <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
             </div>
-            <h3 class="sectionH3">Mend your ways, TRS leaders warn BJP </h3>	
+            <div>
+              <h3 class="sectionH3">Mend your ways,TRS leaders warn BJP </h3>	
+            </div>  
+            </a>					
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <a class=" col-sm-12 noPadding" href="/business/companies/210121/telangana-retains-its-top-4-slot-for-innovation.html">
+            <div class="card-img" style="background-image:url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-an5j9qnt8ou25vkr95kkviipj2-20210108222856.Medi.jpeg')">
+              <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
+            </div>
+            <h3 class="sectionH3">1st year Intermediate classes begin in A.P </h3>
           </a>					
         </div>
       </div>
-      <div class="col-sm-3 col-xs-12 noPadding-xs" data-tb-region-item="">
-        <a class=" col-sm-12 noPadding" href="/nation/current-affairs/190121/first-year-intermediate-classes-begin-in-andhra-pradesh.html">
-          <div class="col-sm-12 " style="padding:0;">
-            <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-q6i06qscmdm4bpkjs1hjtn0g20-20210119021302.jpeg" data-src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-q6i06qscmdm4bpkjs1hjtn0g20-20210119021302.jpeg" class="stry-hd-sml-t2-img imgShadow lazy-loaded" alt="Intermediate regional inspecting officer of East Godavari I. Sarada said that private and unaided colleges should run from 8.30 am to 4.30 pm and collect fees as prescribed by the government. (Representational Photo:PTI)" title="Intermediate regional inspecting officer of East Godavari I. Sarada said that private and unaided colleges should run from 8.30 am to 4.30 pm and collect fees as prescribed by the government. (Representational Photo:PTI)">
-            <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
-          </div>
-          <h3 class="sectionH3">First year Intermediate classes begin in Andhra Pradesh </h3>	
-        </a>					
+      <div class="column">
+        <div class="card">
+          <a class=" col-sm-12 noPadding" href="/business/companies/210121/telangana-retains-its-top-4-slot-for-innovation.html">
+            <div class="card-img" style="background-image:url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-q6i06qscmdm4bpkjs1hjtn0g20-20210118221831.jpeg')">
+              <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
+            </div>
+            <h3 class="stry-hd-sml-led2">CM Edappadi K Palaniswami leaves for Delhi, triggering speculations</h3>
+          </a>					
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <a class=" col-sm-12 noPadding" href="/business/companies/210121/telangana-retains-its-top-4-slot-for-innovation.html">
+            <div class="card-img" style="background-image:url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-42pjbd86tgsqcldgb8ofa2f304-20210111105639.jpeg')">
+              <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
+            </div>
+            <h3 class="stry-hd-sml-led2">Lack of proper security helping in temple offences in Andhra Pradesh</h3>
+          </a>					
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <a class=" col-sm-12 noPadding" href="/business/companies/210121/telangana-retains-its-top-4-slot-for-innovation.html">
+            <div class="card-img" style="background-image:url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-79pj62t18mdmdtl2gvrjn9rm46-20210117232404.jpeg')">
+              <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
+            </div>
+            <h3 class="stry-hd-sml-led2">Covid vaccination to take longer than scheduled time in Andhra Pradesh</h3>
+          </a>					
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+          <a class=" col-sm-12 noPadding" href="/business/companies/210121/telangana-retains-its-top-4-slot-for-innovation.html">
+            <div class="card-img" style="background-image:url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-8lcnjq08g9t4vh2485tg3poei2-20181017145806.jpeg')">
+              <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
+            </div>
+            <h3 class="stry-hd-sml-led2">‘Kantam Kuhi’ of 400 years old is still quenching thirst of people and cattle</h3>
+          </a>					
+        </div>
       </div>
                 
-      <div class="col-sm-3 col-xs-12 hidden-xs stSml " data-tb-region-item="">
-        <!-- Top Sotry new Small 1 -->
-        <div class=" col-sm-12 col-xs-12 tstry-feed-sml-a" style="padding-right:0;">
-        <a href="/nation/politics/180121/cm-edappadi-k-palaniswami-leaves-for-delhi-triggering-speculations.html">
-          <div class="col-sm-4 col-xs-4 noPadding" style="min-height: auto;">
-            <div>
-              <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-q6i06qscmdm4bpkjs1hjtn0g20-20210118221831.jpeg" data-src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-q6i06qscmdm4bpkjs1hjtn0g20-20210118221831.jpeg" class="stry-hd-sml-t3-img imgShadow lazy-loaded" alt="The political grapevine had it that Palaniswami has gone to explain to the Prime Ministers and other leaders of the BJP the difficulties in allowing the T T V Dhinakaran-led AMMK merge with the AIADMK at this point of time.(Representational Photo:DC)" title="The political grapevine had it that Palaniswami has gone to explain to the Prime Ministers and other leaders of the BJP the difficulties in allowing the T T V Dhinakaran-led AMMK merge with the AIADMK at this point of time.(Representational Photo:DC)">
-            </div>
-          </div>		
-          <div class="col-sm-8 col-xs-8 " style="padding-right:0;">
-            <h3 class="stry-hd-sml-led2">CM Edappadi K Palaniswami leaves for Delhi, triggering speculations</h3>
-            <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
-          </div>
-        </a>
-        </div>
-                  
-      </div>
-      <div class="col-sm-3 col-xs-12 hidden-xs stSml " data-tb-region-item="">
-        <!-- Top Sotry new Small 1 -->
-        <div class=" col-sm-12 col-xs-12 tstry-feed-sml-a" style="padding-right:0;">
-        <a href="/nation/crime/170121/lack-of-proper-security-helping-in-temple-offences-in-andhra-pradesh.html">
-          <div class="col-sm-4 col-xs-4 noPadding" style="min-height: auto;">
-            <div>
-              <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-42pjbd86tgsqcldgb8ofa2f304-20210111105639.jpeg" data-src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-42pjbd86tgsqcldgb8ofa2f304-20210111105639.jpeg" class="stry-hd-sml-t3-img imgShadow lazy-loaded" alt="Attacks on temples took place in previous periods too, but this time some political parties made a big hue and cry even in the matter of minor incidents. Mainly, the Telugu Desam, the BJP and the Jana Sena were in the forefront while other Hindu organisations too raised their voice. (Representational Photo)" title="Attacks on temples took place in previous periods too, but this time some political parties made a big hue and cry even in the matter of minor incidents. Mainly, the Telugu Desam, the BJP and the Jana Sena were in the forefront while other Hindu organisations too raised their voice. (Representational Photo)">
-            </div>
-          </div>		
-          <div class="col-sm-8 col-xs-8 " style="padding-right:0;">
-            <h3 class="stry-hd-sml-led2">Lack of proper security helping in temple offences in Andhra Pradesh</h3>
-            <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
-          </div>
-        </a>
-        </div>
-                  
-      </div>
-      <div class="col-sm-3 col-xs-12 hidden-xs stSml " data-tb-region-item="">
-        <!-- Top Sotry new Small 1 -->
-        <div class=" col-sm-12 col-xs-12 tstry-feed-sml-a" style="padding-right:0;">
-        <a href="/nation/current-affairs/170121/covid-vaccination-to-take-longer-than-scheduled-time-in-andhra-pradesh.html">
-          <div class="col-sm-4 col-xs-4 noPadding" style="min-height: auto;">
-            <div>
-              <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-79pj62t18mdmdtl2gvrjn9rm46-20210117232404.jpeg" data-src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-79pj62t18mdmdtl2gvrjn9rm46-20210117232404.jpeg" class="stry-hd-sml-t3-img imgShadow lazy-loaded" alt="The vaccine is offered to health workers in the first phase; to police, municipal and other Covid related staffs in the second phase; and to people above 50 years of age in the third phase. (Representational DC Photo)" title="The vaccine is offered to health workers in the first phase; to police, municipal and other Covid related staffs in the second phase; and to people above 50 years of age in the third phase. (Representational DC Photo)">
-            </div>
-          </div>		
-          <div class="col-sm-8 col-xs-8 " style="padding-right:0;">
-            <h3 class="stry-hd-sml-led2">Covid vaccination to take longer than scheduled time in Andhra Pradesh</h3>
-            <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
-          </div>
-        </a>
-        </div>
-                  
-      </div>
-      <div class="col-sm-3 col-xs-12 hidden-xs stSml " data-tb-region-item="">
-        <!-- Top Sotry new Small 1 -->
-        <div class=" col-sm-12 col-xs-12 tstry-feed-sml-a" style="padding-right:0;">
-        <a href="/nation/in-other-news/180121/kantam-kuhi-of-400-years-old-is-still-quenching-thirst-of-people.html">
-          <div class="col-sm-4 col-xs-4 noPadding" style="min-height: auto;">
-            <div>
-              <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-8lcnjq08g9t4vh2485tg3poei2-20181017145806.jpeg" data-src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-8lcnjq08g9t4vh2485tg3poei2-20181017145806.jpeg" class="stry-hd-sml-t3-img imgShadow lazy-loaded" alt="Cattle grazers along with their cattle frequently come to the Kantam Kuhi to quench their thirst as do agriculture labourers and farmers from the surrounding agriculture fields.  — Pixabay" title="Cattle grazers along with their cattle frequently come to the Kantam Kuhi to quench their thirst as do agriculture labourers and farmers from the surrounding agriculture fields.  — Pixabay">
-            </div>
-          </div>		
-          <div class="col-sm-8 col-xs-8 " style="padding-right:0;">
-            <h3 class="stry-hd-sml-led2">‘Kantam Kuhi’ of 400 years old is still quenching thirst of people and cattle</h3>
-            <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
-          </div>
-        </a>
-        </div>
-                  
-      </div>
-         </div>
-         
-      </div>			
-
     </div>
-
-  <!-- Entertainment -->
-  <div class="w3-card-4" id="Entertainment">
-    <div class="col-sm-12 col-xs-12 noPadding  entBlock imgShadow startBlock EntertainmentHome" data-tb-region="taboolaEntertainmentHome">
-      <!-- <div class="sectionBorder"></div>empty -->
-      <h2><span class="spanTitle uCase"><a href="/entertainment">Entertainment</a></span></h2><!-- big image -->				
-          
-          <a class=" col-sm-4 " href="/entertainment/bollywood/220121/up-police-team-in-mumbai-to-probe-case-against-mirzapur-makers.html" data-tb-region-item="">
-            <div class="col-sm-12 " style="padding:0;">
-              <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0luiapha8kb7egk97vgoo6mso1-20181202224435.jpeg" data-src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0luiapha8kb7egk97vgoo6mso1-20181202224435.jpeg" class="stry-hd-sml-t2-img imgShadow sec3ColBig lazy-loaded" alt="A still from the trailer of the web series Mirzapur . " title="A still from the trailer of the web series Mirzapur . ">
-              
-              <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
-            </div>
-            <h3 class="sectionH3">UP Police team in Mumbai to probe case against 'Mirzapur' makers</h3>	
-      
-          </a>
-          <a class=" col-sm-4 " href="/entertainment/television/220121/game-of-thrones-prequel-series-tales-of-dunk-and-egg-in-the-works.html" data-tb-region-item="">
-            <div class="col-sm-12 " style="padding:0;">
-              <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-o64e800pclepd5spragnpabq87-20190506114033.jpeg" data-src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-o64e800pclepd5spragnpabq87-20190506114033.jpeg" class="stry-hd-sml-t2-img imgShadow sec3ColBig lazy-loaded" alt="Kit Harington in 'Game of Thrones'. (Photo: HBO)" title="Kit Harington in 'Game of Thrones'. (Photo: HBO)">
-              
-              <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
-            </div>
-            <h3 class="sectionH3">'Game of Thrones' prequel series 'Tales of Dunk and Egg' in the works</h3>	
-      
-          </a>
-          <a class=" col-sm-4 " href="/entertainment/bollywood/210121/street-in-delhi-to-be-named-after-sushant-singh-rajput.html" data-tb-region-item="">
-            <div class="col-sm-12 " style="padding:0;">
-              <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-d61u36i7qsnorgi4e3t6k44on6-20200731232755.jpeg" data-src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-d61u36i7qsnorgi4e3t6k44on6-20200731232755.jpeg" class="stry-hd-sml-t2-img imgShadow sec3ColBig lazy-loaded" alt="Sushant Singh Rajput. (Image: Instagram)" title="Sushant Singh Rajput. (Image: Instagram)">
-              
-              <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
-            </div>
-            <h3 class="sectionH3">Street in Delhi to be named after Sushant Singh Rajput</h3>	
-      
-          </a>
-        <!-- small image -->
-        <div class=" col-sm-12 tstry-feed-sml-a" style="padding-right:0;">
-          
-          
-          <a class=" col-sm-4 col-xs-12 entSmall noPadding-xs" href="/entertainment/bollywood/180121/karan-johar-unveils-first-look-of-puri-jagannadhs-liger-starring-vi.html" data-tb-region-item="">
-            <div class="col-sm-4 col-xs-6 noPadding" style="min-height: auto;">
-          
-              <div>
-              <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-1n4s75k93nah9k66jc2jnaaje6-20210118115624.jpeg" data-src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-1n4s75k93nah9k66jc2jnaaje6-20210118115624.jpeg" class="stry-hd-sml-t3-img imgShadow sec3ColSmall lazy-loaded" alt="The film will release in five languages -- Hindi, Telugu, Tamil, Kannada and Malayalam. (Image credit: Twitter/@karanjohar)" title="The film will release in five languages -- Hindi, Telugu, Tamil, Kannada and Malayalam. (Image credit: Twitter/@karanjohar)">
-              
-              </div>
-            </div>		
-            <div class="col-sm-8 col-xs-6 " style="padding-right:0;">
-              <h3 class="stry-hd-sml-led2">Karan Johar unveils first look of Puri Jagannadh's 'Liger' starring Vijay Deverakonda</h3>
-              <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
-            </div>
-          </a>
-          
-          <a class=" col-sm-4 col-xs-12 entSmall noPadding-xs" href="/entertainment/bollywood/190121/a-joyride-to-storytelling.html" data-tb-region-item="">
-            <div class="col-sm-4 col-xs-6 noPadding" style="min-height: auto;">
-          
-              <div>
-              <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-45ore3gbb10ei6d0016msvcba1-20190527001827.jpeg" data-src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-45ore3gbb10ei6d0016msvcba1-20190527001827.jpeg" class="stry-hd-sml-t3-img imgShadow sec3ColSmall lazy-loaded" alt="Renuka Shahane" title="Renuka Shahane">
-              
-              </div>
-            </div>		
-            <div class="col-sm-8 col-xs-6 " style="padding-right:0;">
-              <h3 class="stry-hd-sml-led2">A joyride to storytelling</h3>
-              <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
-            </div>
-          </a>
-          
-          <a class=" col-sm-4 col-xs-12 entSmall noPadding-xs" href="/entertainment/hollywood/220121/hugh-grant-in-talks-to-join-guy-ritchies-new-movie.html" data-tb-region-item="">
-            <div class="col-sm-4 col-xs-6 noPadding" style="min-height: auto;">
-          
-              <div>
-              <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-74qde8kbn1qgjbqh425b3u52d7-20210122150757.jpeg" data-src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-74qde8kbn1qgjbqh425b3u52d7-20210122150757.jpeg" class="stry-hd-sml-t3-img imgShadow sec3ColSmall lazy-loaded" alt="Actor Hugh Grant ( Image source: AP News)" title="Actor Hugh Grant ( Image source: AP News)">
-              
-              </div>
-            </div>		
-            <div class="col-sm-8 col-xs-6 " style="padding-right:0;">
-              <h3 class="stry-hd-sml-led2">Hugh Grant in talks to join Guy Ritchie's new movie</h3>
-              <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
-            </div>
-          </a>
-        </div>						
-    </div>  
-
+         
+  </div>			
+</div>
   </div>
+<div class="w3-container w3-padding-large w3-cyan">
+  <div class="w3-container" style="background-color:whitesmoke">
+    <h4 id="entertainment"style="background-color:white; color: black;font-size:300%;text-decoration: underline;">Entertainment</h4>
+    
+    <div id="myTabContent" class="tab-content">
+    
+       <div class="col-sm-12 noPadding tab-pane fade in active" id="Telangana">
+              
+    <div class="column">
+      <div class="card">
+        <a class=" col-sm-12 noPadding" href="/nation/politics/210121/kcr-okays-10-ews-quota-in-telangana.html">
+          <div class="card-img" style="background-image:url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0luiapha8kb7egk97vgoo6mso1-20181202224435.jpeg')">
+            <!-- <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-0hehs59te2sgl4m2p31ahko2e0-20200718140746.jpeg" alt="1"> -->
+            <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
+          </div>
+          <div>
+            <h3 class="sectionH3">UP Police team in Mumbai to probe case against 'Mirzapur' makers</h3>
+          </div>	
+        </a>					
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <a class=" col-sm-12 noPadding" href="/business/companies/210121/telangana-retains-its-top-4-slot-for-innovation.html">
+          <div class="card-img" style="background-image:url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-o64e800pclepd5spragnpabq87-20190506114033.jpeg')">
+          </div>
+          <div>
+            <h3 class="sectionH3">'Game of Thrones' prequel series 'Tales of Dunk and Egg' in the works</h3>	
+          </div>
+        </a>					
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <a class=" col-sm-12 noPadding" href="/nation/politics/190121/mend-your-ways-trs-leaders-warn-bjp.html">
+          <div class="card-img" style="background-image:url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-d61u36i7qsnorgi4e3t6k44on6-20200731232755.jpeg')">
+            <!-- <img src="https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-2rfkrflurqam96oshffel1o0e4-20201110225303.jpeg" alt="3"> -->
+            <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
+          </div>
+          <div>
+            <h3 class="sectionH3">Street in Delhi to be named after Sushant Singh Rajput, talks raised </h3>	
+          </div>  
+          </a>					
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <a class=" col-sm-12 noPadding" href="/business/companies/210121/telangana-retains-its-top-4-slot-for-innovation.html">
+          <div class="card-img" style="background-image:url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-1n4s75k93nah9k66jc2jnaaje6-20210118115624.jpeg')">
+            <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
+          </div>
+          <h3 class="sectionH3">Karan-Johar unveils 1st look of Puri-Jagannadh's 'Liger' starring Vijay</h3>
+        </a>					
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <a class=" col-sm-12 noPadding" href="/business/companies/210121/telangana-retains-its-top-4-slot-for-innovation.html">
+          <div class="card-img" style="background-image:url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-45ore3gbb10ei6d0016msvcba1-20190527001827.jpeg')">
+            <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
+          </div>
+          <h3 class="stry-hd-sml-led2">A joyride to storytelling in cinema industry</h3>
+        </a>					
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <a class=" col-sm-12 noPadding" href="/business/companies/210121/telangana-retains-its-top-4-slot-for-innovation.html">
+          <div class="card-img" style="background-image:url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-74qde8kbn1qgjbqh425b3u52d7-20210122150757.jpeg')">
+            <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
+          </div>
+          <h3 class="stry-hd-sml-led2">Hugh Grant in talks to join Guy Ritchie's new movie</h3>
+        </a>					
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <a class=" col-sm-12 noPadding" href="/business/companies/210121/telangana-retains-its-top-4-slot-for-innovation.html">
+          <div class="card-img" style="background-image:url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-29sk8plkki3feqn3fjt83q0d93-20200119233543.jpeg')">
+            <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
+          </div>
+          <h3 class="stry-hd-sml-led2">Lean is the new cool in tollywood industry for actresses</h3>
+        </a>					
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <a class=" col-sm-12 noPadding" href="/business/companies/210121/telangana-retains-its-top-4-slot-for-innovation.html">
+          <div class="card-img" style="background-image:url('https://s3.ap-southeast-1.amazonaws.com/images.deccanchronicle.com/dc-Cover-124rv7fketb2ap3pghpckdbfj0-20190410014247.jpeg')">
+            <!-- <span class="homeStrapDate">13 Jul 2015 2:11 PM IST</span> -->
+          </div>
+          <h3 class="stry-hd-sml-led2">Ranjini film 'Annaatthe' shoot put on hold</h3>
+        </a>					
+      </div>
+    </div>
+              
+  </div>
+       
+</div>
+</div>
+</div>			
+
+
+ 
   <!-- Contact Section -->
-  <div class="w3-container w3-padding-large w3-grey">
-    <h4 id="sports"><b>Sports</b></h4>
-    <h4>Category Sports News</h4>
-    <p><img class="alignnone wp-image-24092 size-full lazyloaded" src="https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider.png" alt="category-news-slider" width="845" height="536" sizes="(max-width: 845px) 100vw, 845px" srcset="https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider.png 845w, https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider-300x190.png 300w, https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider-768x487.png 768w, https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider-610x387.png 610w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-24092 size-full" src="https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider.png" alt="category-news-slider" width="845" height="536" srcset="https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider.png 845w, https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider-300x190.png 300w, https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider-768x487.png 768w, https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider-610x387.png 610w" sizes="(max-width: 845px) 100vw, 845px" /></noscript></p>
+  <div class="w3-container w3-padding-large w3-cyan">
+    <div class="w3-container" style="background-color:whitesmoke">
+      <h4 id="sports"style="background-color:white; color: black;font-size:300%;text-decoration: underline;">Sports</h4>
+      <h4>Category Sports News</h4>
+      <div id="myTabContent" class="tab-content">
+    
+    
+    <p><img class="alignnone wp-image-24092 size-full lazyloaded" src="https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider.png" alt="category-news-slider" width="1000" background-position=" center center"; height="536" sizes="(max-width: 845px) 100vw, 845px" srcset="https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider.png 845w, https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider-300x190.png 300w, https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider-768x487.png 768w, https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider-610x387.png 610w" data-ll-status="loaded"><noscript><img class="alignnone wp-image-24092 size-full" src="https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider.png" alt="category-news-slider" width="845" height="536" srcset="https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider.png 845w, https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider-300x190.png 300w, https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider-768x487.png 768w, https://uicookies.com/wp-content/uploads/edd/2016/11/category-news-slider-610x387.png 610w" sizes="(max-width: 845px) 100vw, 845px" /></noscript></p>
+  </div>
+  </div>
   </div>
 
   <!-- Footer -->
   <footer class="w3-container w3-padding-32 w3-dark-grey">
   <div class="w3-row-padding">
     <div class="w3-third">
-      <h3>FOOTER</h3>
-      <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      <h3>Contact Us</h3>
+      <p>Time-Readers,Road-no:5/4,Chronicle Apartments,Autonagar,Vijayawada,Andhra pradesh,Pincode:522502</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">TR</a></p>
     </div>
   
     <div class="w3-third">
-      <h3>BLOG POSTS</h3>
+      <h3>Personal Advertisements</h3>
       <ul class="w3-ul w3-hoverable">
         <li class="w3-padding-16">
-          <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Lorem</span><br>
-          <span>Sed mattis nunc</span>
+          
+          <span class="w3-large">Public Announcements</span><br>
+          <span>Circular and corporation permission</span>
         </li>
         <li class="w3-padding-16">
-          <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Ipsum</span><br>
-          <span>Praes tinci sed</span>
+          
+          <span class="w3-large">Personal</span><br>
+          <span>Photo and event info</span>
         </li> 
       </ul>
     </div>
@@ -310,7 +313,7 @@
   </div>
   </footer>
   
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+  <div class="w3-black w3-center w3-padding-24">@copyright <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">tr.news</a></div>
 
 <!-- End page content -->
 </div>

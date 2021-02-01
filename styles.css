@@ -19,7 +19,14 @@ body{
     background-size: cover;  */
     background-color: rgb(202, 119, 17);
 }
-/* * {
+.card-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 200px;
+  width: 250px;
+}
+* {
     box-sizing: border-box;
   }
   
@@ -35,10 +42,11 @@ body{
   }
   
   
-  .row {margin: 0 -5px;}
+  .row {margin: 10px -5px;}
   
   
   .row:after {
+    padding: 0 10px;
     content: "";
     display: table;
     clear: both;
@@ -46,10 +54,13 @@ body{
   
   
   .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.2); 
     padding: 16px;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
     background-color: #f1f1f1;
+    border-radius: 12px;
   }
   
   
@@ -64,4 +75,4 @@ body{
     width: 100%;
     height: 15vw;
     object-fit: cover;
-}  */
+}  
